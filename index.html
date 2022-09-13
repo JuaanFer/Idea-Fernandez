@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Home</title>
 </head>
 <body>
@@ -29,7 +31,7 @@
 
     <!--seccion 1: Sobre nosotros-->
     <section id="nosotros" class="sobreNosotros">
-            <h1>SOBRE NOSOTROS</h1>
+            <h1 class="animate__animated animate__bounceInRight">SOBRE NOSOTROS</h1>
             <div class="sobreNosotros_content">
                 <p class="textSobreNosotros">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eos delectus, voluptatum saepe cum quos porro nesciunt accusantium quam rerum, fuga quisquam assumenda debitis corrupti qui quia temporibu s explicabo pariatur minima quae perferendis. Blanditiis dolor quis beatae accusantium amet vero obcaecati? Consequuntur ad officiis quia dignissimos, sit aperiam similique ipsa.</p>
                 <img class="oficina1" src="./images/5fa5845a822e3.jpeg" alt="Imagen">
@@ -44,7 +46,9 @@
         <div class="contacto_img">
             <img src="./images/contacto.png" alt="Imagen de Contacto">
         </div>
-        <div class="contacto_info">
+        <div class="contacto_info" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <p>
                 <ul>
                     <li>Telefono: 47178079</li>
@@ -104,6 +108,9 @@
             <li><a href="https://es-la.facebook.com/" target="_blank">"Logo de Facebook"</a></li>
         </ul>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
