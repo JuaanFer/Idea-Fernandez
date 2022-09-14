@@ -4,10 +4,10 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    padding-top: 120px;
 }
-header{
-    background-color: gray ;
-    width: 100%;
+.navPropio{
+    background-color: grey;
 }
 .navPropio a{
     color: white;
@@ -23,9 +23,11 @@ header{
 }
 .sobreNosotros{
     padding: 20px;
+    padding-top: 120px;
     background: #556270;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: transparent;
 
 }
 .sobreNosotros img{
@@ -49,6 +51,7 @@ header{
     background-image: url("../images/fondo1.png");
     background-size: cover;
     padding: 10px;
+    padding-top: 120px;
     display: grid;
     grid-template-areas: 
     "0 titulo titulo"
@@ -156,11 +159,12 @@ footer{
 }
 .logos_footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.arriba{
+.logos_footer a{
     display: flex;
-    justify-content: end;
+    align-items: center;
 }
 .redes{
     display: flex;
@@ -168,6 +172,10 @@ footer{
 }
 .redes a{
     margin: 15px;
+    transition: all 0.5s;
+}
+.redes a:hover{
+    transform: scale(1.25);
 }
 
 @media(max-width:700px){
