@@ -14,6 +14,10 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.navBar img{
+    height: 100%;
+    max-height: 100px;
+}
 .navmenu{
     display: flex;
     flex-flow: row wrap;
@@ -27,6 +31,9 @@ nav li a{
     color: white;
     border: solid;
     padding: 2px;
+}
+nav li a:hover{
+    color: white;
 }
 .sobreNosotros{
     padding: 20px;
@@ -116,7 +123,7 @@ h1{
     text-align: center;
     padding: 20px;
 }
-h2{
+.galeria h2{
     text-align: center;
     margin: 20px 0 20px 0;
 }
@@ -133,28 +140,25 @@ h2{
     background-color: #656B82;
     padding: 10px;
 }
-.equipo h2{
-    text-align: center;
-}
-.equipoGaleria{
+.equipoTexto{
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.equipoGaleria img{
-    width: 100%;
-    height: 100%;
-    max-width: 500px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    transition: all 1s;
+.imagenEquipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.equipoGaleria img:hover{
-    transform: scale(1.2);
-}
-.equipoGaleria iframe{
+.imgEquipo{
     width: 100%;
-    max-width: 450px;
+    max-width: 600px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
 }
 footer{
     background-color: #2E2836;
