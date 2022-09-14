@@ -9,11 +9,47 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/bc94942bb8.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <title>Galeria</title>
 </head>
 <body>
     <header id="inicio">
+      <nav class="navbar navbar-expand-lg navPropio">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="Logo" width="100" height="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa-solid fa-ellipsis-vertical"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#nosotros">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#ubicacion">Ubicacion</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./pages/galeria.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Galeria
+                </a>
+                <ul class="dropdown-menu dropMenu">
+                  <li><a class="dropdown-item" href="#oficinas">Nuestras Oficinas</a></li>
+                  <li><a class="dropdown-item" href="#eventos">Eventos</a></li>
+                  <li><a class="dropdown-item" href="#video">Media</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--
         <nav class="navBar">
             <div>
                 <img src="../images/logo.png" alt="Logo">
@@ -26,6 +62,7 @@
                 <li><a href="./galeria.html">Galeria</a></li>
             </ul>
         </nav>
+        -->
     </header>
 
     <h1>Galeria</h1>
@@ -37,7 +74,7 @@
 
                 <div class="col-lg-6 carouselItem">
                     <div>
-                        <h2>Nuestras oficinas</h2>
+                        <h2 id="oficinas">Nuestras oficinas</h2>
                     </div>
                     <!--Carrusel Oficinas-->
                     <div id="carouselOficinas" class="carousel slide" data-bs-ride="true">
@@ -70,7 +107,7 @@
                 
                 <div class="col-lg-6 carouselItem">
                     <div>
-                        <h2>Eventos</h2>
+                        <h2 id="eventos">Eventos</h2>
                     </div>
                     <!--Carousel Eventos-->
                     <div id="carouselEventos" class="carousel slide" data-bs-ride="true">
@@ -126,23 +163,25 @@
 
         </div>
       </div>
-      
+
     </section>
 
-    <div class="video">
+    <div class="video" id="video">
       <iframe width="700" height="450" src="https://www.youtube.com/embed/DbH2P4i64Q4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <footer id="pie">
-        <img src="../images/logo.png" alt="Logo" width="50" height="50">
-        <div>
-            <a href="#inicio">"boton volver arriba"</a>
+      <div>
+        <div class="logos_footer">
+            <img src="../images/logo.png" alt="Logo" width="50" height="50">
+            <a class="arriba" href="#inicio"><img src="../images/icono_arriba.png" alt="Volver Arriba"></a>
         </div>
-        <ul>
-            <li><a href="https://www.instagram.com/" target="_blank">"Logo de Instagram"</a></li>
-            <li><a href="https://ar.linkedin.com/" target="_blank">"Logo de LinkedIn"</a></li>
-            <li><a href="https://es-la.facebook.com/" target="_blank">"Logo de Facebook"</a></li>
-        </ul>
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/logo_instagram.png" alt="Logo Instagram"></a>
+            <a href="https://ar.linkedin.com/" target="_blank"><img src="../images/logo_linkedin.png" alt="Logo LinkedIn"></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><img src="../images/logo_facebook.png" alt="Logo Facebook"></a>
+        </div>
+      </div>
     </footer>
 
 

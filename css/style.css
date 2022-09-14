@@ -9,31 +9,17 @@ header{
     background-color: gray ;
     width: 100%;
 }
-.navBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navBar img{
-    height: 100%;
-    max-height: 100px;
-}
-.navmenu{
-    display: flex;
-    flex-flow: row wrap;
-}
-.navmenu li{
-    list-style: none;
-    margin: 10px;
-}
-nav li a{
-    text-decoration: none;
+.navPropio a{
     color: white;
-    border: solid;
-    padding: 2px;
 }
-nav li a:hover{
-    color: white;
+.navPropio a:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 110%;
+}
+.dropMenu{
+    background-color: grey;
+    border-color: black;
 }
 .sobreNosotros{
     padding: 20px;
@@ -75,8 +61,6 @@ nav li a:hover{
 }
 .contacto_img{
     grid-area: img;
-    width: 100%;
-    max-width: 600px;
 }
 .contacto_info{
     grid-area: txt;
@@ -89,6 +73,10 @@ nav li a:hover{
 }
 .contacto_tabla{
     grid-area: tabla;
+}
+.tabla{
+    border: solid 2px black;
+    border-collapse: separate;
 }
 .formulario{
     background-image: url("../images/fondo2.png");
@@ -164,25 +152,26 @@ footer{
     background-color: #2E2836;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
-footer ul{
+.logos_footer{
     display: flex;
+    flex-direction: column;
 }
-footer ul li{
-    list-style-type: none;
-    margin: 10px;
+.arriba{
+    display: flex;
+    justify-content: end;
 }
-footer a{
-    text-decoration: underline;
-    color: white;
+.redes{
+    display: flex;
+    justify-content: center;
 }
+.redes a{
+    margin: 15px;
+}
+
 @media(max-width:700px){
 
-    .navBar{
-        flex-flow: column wrap;
-    }
     .sobreNosotros_content{
         flex-direction: column;
     }
@@ -200,13 +189,6 @@ footer a{
         align-items: center;
     }
     .ubicacion_content{
-        flex-direction: column;
-    }
-
-    footer{
-        flex-flow: column wrap;
-    }
-    footer ul{
         flex-direction: column;
     }
 }
