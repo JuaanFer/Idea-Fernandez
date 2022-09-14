@@ -29,7 +29,7 @@ nav li a{
     padding: 2px;
 }
 .sobreNosotros{
-    padding: 10px;
+    padding: 20px;
     background: #556270;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -112,46 +112,22 @@ nav li a{
     width: 100%;
     max-width: 400px;
 }
-.titulo{
-    margin-top: 100px;
+h1{
     text-align: center;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    margin: 20px 0 20px 0;
 }
 .galeria{
     background: #F0C27B;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-}
-.Label{
     padding: 15px;
 }
-.imgOficina{
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    align-items: center;
-}
-.imgOficina img{
-    width: 100%;
-    max-width: 500px;
-    margin: 20px;
-    transition: all 1s;
-}
-.imgOficina img:hover{
-    transform: scale(1.1);
-}
-.imgEventos{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-.imgEventos img{
-    width: 100%;
-    max-width: 500px;
-    margin: 20px;
-    transition: all 1s;
-}
-.imgEventos img:hover{
-    transform: scale(1.1);
+.carouselItem{
+    margin-bottom: 50px;
 }
 .equipo{
     background-color: #656B82;

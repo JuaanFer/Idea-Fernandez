@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/icono_galeria.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,28 +28,82 @@
         </nav>
     </header>
 
-    <div class="titulo">
-        <h1>Galeria</h1>
-    </div>
+    <h1>Galeria</h1>
 
     <!--seccion 1: Galeria-->
     <section id="galeria" class="galeria">
-        <div class="Label">
-            <h2>Nuestras oficinas</h2>
+        <div class="container">
+            <div class="row aling-items-start">
+
+                <div class="col-lg-6 carouselItem">
+                    <div>
+                        <h2>Nuestras oficinas</h2>
+                    </div>
+                    <!--Carrusel Oficinas-->
+                    <div id="carouselOficinas" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselOficinas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselOficinas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselOficinas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/oficina1.jpg" class="d-block w-100" alt="Oficina Principal">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/oficina2.jpg" class="d-block w-100" alt="Oficina Individual">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/oficina3.jpg" class="d-block w-100" alt="Espacio de Coworking">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOficinas" data-bs-slide="prev">
+                          <span aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselOficinas" data-bs-slide="next">
+                          <span aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 carouselItem">
+                    <div>
+                        <h2>Eventos</h2>
+                    </div>
+                    <!--Carousel Eventos-->
+                    <div id="carouselEventos" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/evento1.jpg" class="d-block w-100" alt="Evento Navideño">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/evento2.jpg" class="d-block w-100" alt="Evento Nacional">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/evento3.jpg" class="d-block w-100" alt="Evento Internacional">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventos" data-bs-slide="prev">
+                          <span aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEventos" data-bs-slide="next">
+                          <span aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+            </div>
         </div>
-        <div class="imgOficina">
-            <img src="../images/oficina1.jpg" alt="Imagen de gente en la oficina">
-            <img src="../images/oficina2.jpg" alt="Imagen de una oficina individual">
-            <img src="../images/oficina3.jpg" alt="Imagen de espacio coworking">
-        </div>
-        <div>
-            <h2 class="Label">Eventos</h2>
-        </div>
-        <div class="imgEventos">
-            <img src="../images/evento1.jpg" alt="Imagen de evento navidad">
-            <img src="../images/evento2.jpg" alt="Imagen de charla grupal">
-            <img src="../images/evento3.jpg" alt="Imagen de otra charla grupal">
-        </div>
+
     </section>
 
     <!--seccion 2: Nuestro Equipo-->
@@ -77,5 +132,8 @@
         </ul>
     </footer>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
