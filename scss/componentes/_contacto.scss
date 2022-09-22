@@ -1,0 +1,34 @@
+.contacto{
+    background-image: url("../images/fondo1.png");
+    background-size: cover;
+    padding: 10px;
+    padding-top: 120px;
+    display: grid;
+    grid-template-areas: 
+    "0 titulo titulo"
+    "img txt tabla"
+    "img txt tabla";
+}
+.contacto_titulo{
+    font-weight: bold;
+    grid-area: titulo;
+}
+.contacto_img{
+    grid-area: img;
+}
+.contacto_info{
+    grid-area: txt;
+    ul{
+        list-style: none;
+        li{
+            margin: 5px;
+        }
+    }
+}
+.contacto_tabla{
+    grid-area: tabla;
+}
+.tabla{
+    border: solid 2px black;
+    border-collapse: separate;
+}

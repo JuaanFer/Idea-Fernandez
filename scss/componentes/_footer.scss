@@ -1,0 +1,26 @@
+footer{
+    background-color: #2E2836;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.logos_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a{
+        display: flex;
+        align-items: center;
+    }
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    a{
+        margin: 15px;
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(1.25);
+        }
+    }
+}
