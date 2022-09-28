@@ -10,18 +10,17 @@ body {
 
 h1 {
   font-weight: bold;
-  text-align: center;
   padding: 20px;
-  padding-top: 120px;
+  color: white;
+  padding: 400px 0 400px 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .sobreNosotros {
   padding: 20px;
   padding-top: 150px;
-  background: #556270; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #FF6B6B, #556270); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border: transparent;
+  background-color: #F8F4F9;
   display: flex;
 }
 .sobreNosotros img {
@@ -105,20 +104,38 @@ footer {
 }
 
 .navPropio {
-  background-color: grey;
+  background-color: #080808;
 }
 .navPropio a {
   color: white;
 }
 .navPropio a:hover {
-  color: black;
+  color: #F7C40E;
   font-weight: bold;
-  font-size: 110%;
+  background-color: #080808;
+}
+
+.linkNav:focus, .linkNav:hover {
+  color: #F7C40E;
 }
 
 .dropMenu {
-  background-color: grey;
+  background-color: #080808;
   border-color: black;
+}
+
+.dropPropio:hover {
+  background-color: #080808;
+}
+
+.bienvenidos {
+  background-image: url("../images/fondotitulo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .formulario {

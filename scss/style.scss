@@ -8,15 +8,30 @@
     a{
         color: $txt-color;
         &:hover{
-            color: black;
+            color: #F7C40E;
             font-weight: bold;
-            font-size: 110%;
+            background-color: $bg-nav;
         }
     }
+}
+.linkNav:focus, .linkNav:hover{
+    color: #F7C40E;
 }
 .dropMenu{
     background-color: $bg-nav;
     border-color: black;
+}
+.dropPropio:hover{
+    background-color: $bg-nav;
+}
+.bienvenidos{
+    background-image: url("../images/fondotitulo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .formulario{
