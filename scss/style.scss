@@ -1,3 +1,4 @@
+@import "./base/map";
 @import "./base/variables";
 @import "./componentes/global";
 @import "./componentes/nosotros";
@@ -13,6 +14,10 @@
             background-color: $bg-nav;
         }
     }
+}
+.navbar-collapse{
+    justify-content: flex-end;
+    padding-right: 70px;
 }
 .linkNav:focus, .linkNav:hover{
     color: #F7C40E;
@@ -141,6 +146,7 @@
     }
 }
 .video{
+    padding: 150px 0 20px 0;
     display: flex;
     justify-content: center;
     margin: 25px;
