@@ -1,8 +1,5 @@
 footer{
-    background-color: #2E2836;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+    @include pieDePagina();
 }
 .logos_footer{
     display: flex;

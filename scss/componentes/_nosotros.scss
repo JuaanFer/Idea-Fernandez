@@ -11,8 +11,6 @@
     }
 }
 .sobreNosotros_content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend %disposicion;
     padding: 0 30px 0 30px;
 }

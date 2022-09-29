@@ -1,5 +1,7 @@
 @import "./base/map";
 @import "./base/variables";
+@import "./base/mixin";
+@import "./base/extend";
 @import "./componentes/global";
 @import "./componentes/nosotros";
 @import "./componentes/contacto";
@@ -88,19 +90,14 @@
     padding: 150px 50px 50px 50px;
 }
 .equipoTexto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %disposicion;
     h2{
         margin-bottom: 50px;
         font-size: 300%;
     }
 }
 .imagenEquipo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %disposicion;
 }
 .imgEquipo{
     width: 100%;
@@ -121,10 +118,7 @@
     align-items: center;
     justify-content: center;
     .ficha{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @extend %disposicion;
         margin: 50px 50px 0 50px;
         img{
             border-radius: 150px;
@@ -151,7 +145,6 @@
     justify-content: center;
     margin: 25px;
 }
-
 @media(max-width:700px){
     .sobreNosotros{
         flex-direction: column;
