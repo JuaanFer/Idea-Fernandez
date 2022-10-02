@@ -1,4 +1,4 @@
-.miembrosFichas .ficha, .imagenEquipo, .equipoTexto, .sobreNosotros_content {
+.equipo .miembrosFichas .ficha, .equipo .imagenEquipo, .equipo .equipoTexto, .sobreNosotros_content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,12 +24,15 @@ h1 {
 }
 
 .sobreNosotros {
-  padding: 20px;
-  padding-top: 150px;
+  padding: 200px 20px 200px 20px;
   background-color: #F8F4F9;
   display: flex;
 }
+.sobreNosotros .textSobreNosotros {
+  padding: 50px 40px 10px 30px;
+}
 .sobreNosotros img {
+  border-radius: 10px;
   transition: all 1s;
 }
 .sobreNosotros img:hover {
@@ -41,10 +44,9 @@ h1 {
 }
 
 .contacto {
-  background-image: url("../images/fondo1.png");
-  background-size: cover;
-  padding: 10px;
-  padding-top: 120px;
+  background-color: #757780;
+  color: #F8F4F9;
+  padding: 220px 50px 120px 50px;
   display: grid;
   grid-template-areas: "0 titulo titulo" "img txt tabla" "img txt tabla";
 }
@@ -110,12 +112,15 @@ footer {
   background-color: #080808;
 }
 .navPropio a {
-  color: white;
+  color: #F8F4F9;
 }
 .navPropio a:hover {
   color: #F7C40E;
   font-weight: bold;
   background-color: #080808;
+}
+.navPropio .iconoHamburgesa {
+  color: #F7C40E;
 }
 
 .navbar-collapse {
@@ -147,9 +152,11 @@ footer {
 }
 
 .formulario {
-  background-image: url("../images/fondo2.png");
-  color: white;
-  padding: 10px;
+  background-color: #757780;
+  color: #F8F4F9;
+  padding: 150px;
+  display: flex;
+  justify-content: center;
 }
 .formulario h2 {
   font-weight: bold;
@@ -158,20 +165,22 @@ footer {
 
 .ubicacion {
   background-color: #656B82;
-  padding: 10px;
+  padding: 250px 50px 250px 50px;
 }
 .ubicacion h2 {
+  margin-bottom: 50px;
   font-weight: bold;
   text-align: center;
 }
 .ubicacion iframe {
   width: 100%;
-  max-width: 400px;
+  max-width: 800px;
 }
 
 .ubicacion_content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .ubicacion_content ul {
   list-style: none;
@@ -197,52 +206,49 @@ footer {
 .equipo {
   background-color: #656B82;
   padding: 150px 50px 50px 50px;
+  color: #F8F4F9;
 }
-
-.equipoTexto h2 {
+.equipo .equipoTexto h2 {
   margin-bottom: 50px;
   font-size: 300%;
 }
-
-.imgEquipo {
+.equipo .imgEquipo {
   width: 100%;
   max-width: 600px;
 }
-
-.tituloFichas {
+.equipo .tituloFichas {
   text-align: center;
   margin-top: 100px;
 }
-.tituloFichas h3 {
+.equipo .tituloFichas h3 {
   font-size: 300%;
   font-weight: bold;
 }
-
-.miembrosFichas {
+.equipo .miembrosFichas {
   display: flex;
   padding: 0 0 150px 0;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.miembrosFichas .ficha {
+.equipo .miembrosFichas .ficha {
   margin: 50px 50px 0 50px;
 }
-.miembrosFichas .ficha img {
+.equipo .miembrosFichas .ficha img {
   border-radius: 150px;
   width: 200px;
   max-width: 100%;
   filter: grayscale(100%);
 }
-.miembrosFichas .ficha img:hover {
+.equipo .miembrosFichas .ficha img:hover {
   filter: grayscale(0%);
   transition: all 1s;
 }
-.miembrosFichas .ficha .infoFicha {
+.equipo .miembrosFichas .ficha .infoFicha {
   text-align: center;
   margin-top: 20px;
 }
-.miembrosFichas .ficha .infoFicha h4 {
+.equipo .miembrosFichas .ficha .infoFicha h4 {
   font-weight: bold;
 }
 

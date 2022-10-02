@@ -1,8 +1,7 @@
 .contacto{
-    background-image: url("../images/fondo1.png");
-    background-size: cover;
-    padding: 10px;
-    padding-top: 120px;
+    background-color: #757780;
+    color: $txt-color;
+    padding: 220px 50px 120px 50px;
     display: grid;
     grid-template-areas: 
     "0 titulo titulo"
