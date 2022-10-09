@@ -1,4 +1,4 @@
-.equipo .miembrosFichas .ficha, .equipo .imagenEquipo, .equipo .equipoTexto, .sobreNosotros_content {
+.equipo .miembrosFichas .ficha, .equipo .imagenEquipo, .equipo .equipoTexto, .sobreNosotros .sobreNosotros_content .sobreNosotros_text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,23 +25,35 @@ h1 {
 }
 
 .sobreNosotros {
-  padding: 200px 20px 200px 20px;
+  padding: 200px 0 100px 0;
   background-color: #F8F4F9;
   display: flex;
 }
-.sobreNosotros .textSobreNosotros {
-  padding: 50px 40px 10px 30px;
+.sobreNosotros .sobreNosotros_content {
+  display: flex;
+  margin: 0 100px 0 100px;
 }
-.sobreNosotros img {
+.sobreNosotros .sobreNosotros_content .sobreNosotros_text {
+  margin-right: 20px;
+}
+.sobreNosotros .sobreNosotros_content .sobreNosotros_text h2 {
+  padding-left: 10px;
+}
+.sobreNosotros .sobreNosotros_content .sobreNosotros_text .sobreNosotros_text_p {
+  padding: 40px 100px 40px 10px;
+  font-size: 120%;
+}
+.sobreNosotros .sobreNosotros_content .sobreNosotros_text .sobreNosotros_text_p span {
+  color: #F7C40E;
+}
+.sobreNosotros .sobreNosotros_content img {
   border-radius: 10px;
   transition: all 1s;
+  width: 1800px;
+  max-width: 100%;
 }
-.sobreNosotros img:hover {
+.sobreNosotros .sobreNosotros_content img:hover {
   transform: scale(1.05);
-}
-
-.sobreNosotros_content {
-  padding: 0 30px 0 30px;
 }
 
 .contacto {
@@ -152,6 +164,27 @@ footer {
   left: 0;
 }
 
+.baner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #080808;
+  color: #F8F4F9;
+}
+.baner .baner_content {
+  padding: 100px 0 30px 0;
+}
+.baner .baner_content .baner_ficha {
+  margin-bottom: 20px;
+}
+.baner .baner_content .baner_ficha .baner_ficha_content {
+  border: solid #F7C40E;
+  border-radius: 50px;
+  padding: 20px;
+}
+.baner .baner_content .baner_ficha .baner_ficha_content h5 {
+  color: #F7C40E;
+}
+
 .formulario {
   background-color: #757780;
   color: #F8F4F9;
@@ -181,7 +214,6 @@ footer {
 .ubicacion_content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .ubicacion_content ul {
   list-style: none;
@@ -260,9 +292,27 @@ footer {
   margin: 25px;
 }
 
-@media (max-width: 700px) {
-  .sobreNosotros {
+@media (max-width: 1150px) {
+  .sobreNosotros .sobreNosotros_content {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px;
+  }
+  .sobreNosotros .sobreNosotros_content .sobreNosotros_text {
+    margin: 0;
+  }
+  .sobreNosotros .sobreNosotros_content .sobreNosotros_text .textSobreNosotros {
+    padding: 40px 10px 40px 10px;
+  }
+  .sobreNosotros img {
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .sobreNosotros .sobreNosotros_content {
+    margin-right: 20px;
+    margin-left: 20px;
   }
   .contacto {
     display: flex;

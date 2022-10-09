@@ -1,19 +1,35 @@
 .sobreNosotros{
-    padding: 200px 20px 200px 20px;
+    padding: 200px 0 100px 0;
     background-color: #F8F4F9;
     display: flex;
-    .textSobreNosotros{
-        padding: 50px 40px 10px 30px;
-    }
-    img{
-        border-radius: 10px;
-        transition: all 1s;
-        &:hover{
-            transform: scale(1.05);
+    .sobreNosotros_content{
+        display: flex;
+        margin: 0 100px 0 100px;
+        .sobreNosotros_text{
+            @extend %disposicion;
+            margin-right: 20px;
+            h2{
+                padding-left: 10px;
+            }
+            .sobreNosotros_text_p{
+                padding: 40px 100px 40px 10px;
+                font-size: 120%;
+                span{
+                    color: #F7C40E;
+                }
+            }
+        }
+        img{
+            border-radius: 10px;
+            transition: all 1s;
+            width: 1800px;
+            max-width: 100%;
+            &:hover{
+                transform: scale(1.05);
+            }
         }
     }
+    
 }
-.sobreNosotros_content{
-    @extend %disposicion;
-    padding: 0 30px 0 30px;
-}
+
+
