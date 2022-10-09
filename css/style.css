@@ -55,6 +55,9 @@ h1 {
 .sobreNosotros .sobreNosotros_content img:hover {
   transform: scale(1.05);
 }
+.sobreNosotros .sobreNosotros_content .sobreNosotros_img {
+  display: flex;
+}
 
 .contacto {
   background-color: #757780;
@@ -302,7 +305,7 @@ footer {
   .sobreNosotros .sobreNosotros_content .sobreNosotros_text {
     margin: 0;
   }
-  .sobreNosotros .sobreNosotros_content .sobreNosotros_text .textSobreNosotros {
+  .sobreNosotros .sobreNosotros_content .sobreNosotros_text .sobreNosotros_text_p {
     padding: 40px 10px 40px 10px;
   }
   .sobreNosotros img {
