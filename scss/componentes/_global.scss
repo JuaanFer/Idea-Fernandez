@@ -14,3 +14,8 @@ h1{
     text-align: map-get($titulos, alineacion );
     text-shadow: 8px 8px 7px black;
 }
+.arriba{
+    display: block;
+    position: sticky;
+    top: 100px;
+}

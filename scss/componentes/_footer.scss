@@ -1,5 +1,10 @@
 footer{
     @include pieDePagina();
+    color: $txt-color;
+    .legal{
+        padding-top: 25px;
+        text-align: center;
+    }
 }
 .logos_footer{
     display: flex;
