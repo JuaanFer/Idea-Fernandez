@@ -126,37 +126,47 @@
 
         <!--seccion 3: Contacto-->
         <section id="contacto" class="contacto">
-            <div class="mb-2">
-                <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <div class="mb-2">
-                <label for="exampleFormControlInput1" class="form-label">Apellido:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <div class="mb-2">
-                <label for="exampleFormControlInput1" class="form-label">Teléfono:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <div class="mb-2">
-                <label for="exampleFormControlInput1" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-              </div>
-              <div class="mb-2">
-                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu Consulta:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-              </div>
+            <form action="" class="form">
+                <div class="form-header">
+                    <h2 class="form-titulo">CONTACTANOS<span>...</span></h2>
+                </div>
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre...">
+
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" id="apellido" class="form-input" placeholder="Escriba su apellido...">
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-input" placeholder="Escriba su email...">
+
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input type="tel" id="telefono" class="form-input" placeholder="Escriba su teléfono...">
+
+                <label for="mensaje" class="form-label">Dejanos tu consulta:</label>
+                <textarea id="mensaje" class="form-textarea"></textarea>
+
+                <input type="submit" class="btn-submit" value="Enviar">
+            </form>
         </section>
 
         <!--seccion 4: Ubicacion-->
         <section id="ubicacion" class="ubicacion">
-            <h2>DONDE ENCONTRAROS</h2>
-            <div class=ubicacion_content>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.599384357372!2d-75.65574465770513!3d41.41443828466978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4d932bca6baed%3A0xd024be334f73f091!2s721%20Adams%20Ave%2C%20Scranton%2C%20PA%2018510%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1665265864276!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <ul>
-                    <li>721 Adams Ave, Scranton.</li>
-                    <li>Pensilvania, EE. UU.</li>
-                </ul>
+            <div class="ubicacion_content">
+                <div class=ubicacion_mapa>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.599384357372!2d-75.65574465770513!3d41.41443828466978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4d932bca6baed%3A0xd024be334f73f091!2s721%20Adams%20Ave%2C%20Scranton%2C%20PA%2018510%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1665265864276!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                </div>
+                <div class="ubicacion_text">
+                    <h2>DONDE ENCONTRAROS</h2>
+                    <p>
+                        721 Adams Ave, Scranton, Pensilvania, EE. UU.
+                        <br>
+                        <br>
+                        Tel.: 54 11 2369-9397
+                        <br>
+                        <br>
+                        9:00 am - 18:00 pm
+                    </p>
+                </div>
             </div>
         </section>
     </main>
@@ -172,7 +182,7 @@
             <a href="https://es-la.facebook.com/" target="_blank"><img src="./images/logo_facebook.png" alt="Logo Facebook"></a>
         </div>
         <div class="legal">
-            <p>© Copyright 2022 - Windmerge | Todos los derechos reservados | 721 Adams Ave, Pensilvania, EE.UU.</p>
+            <p>© Copyright 2022 - <span>Windmerge</span> | Todos los derechos reservados | 721 Adams Ave, Pensilvania, EE.UU.</p>
         </div>
     </footer>
 

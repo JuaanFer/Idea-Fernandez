@@ -11,13 +11,13 @@
     a{
         color: $txt-color;
         &:hover{
-            color: #F7C40E;
+            color: $color-enfasis;
             font-weight: bold;
             background-color: $bg-nav;
         }
     }
     .iconoHamburgesa{
-        color:#F7C40E;
+        color: $color-enfasis;
     }
 }
 .navbar-collapse{
@@ -25,7 +25,7 @@
     padding-right: 70px;
 }
 .linkNav:focus, .linkNav:hover{
-    color: #F7C40E;
+    color: $color-enfasis;
 }
 .dropMenu{
     background-color: $bg-nav;
@@ -51,11 +51,11 @@
         .baner_ficha{
             margin-bottom: 20px;
             .baner_ficha_content{
-                border: solid #F7C40E;
+                border: solid $color-enfasis;
                 border-radius: 50px;
                 padding: 20px;
                 h5{
-                    color: #F7C40E;
+                    color: $color-enfasis;
                 }
             }
         }
@@ -64,23 +64,27 @@
 
 .ubicacion{
     background-color: #656B82;
-    padding: 150px 50px 100px 50px;
-    h2{
-        margin-bottom: 50px;
-        font-weight: bold;
-        text-align: center;
-    }
-    iframe{
-        width: 100%;
-        max-width: 800px;
-    }
-}
-.ubicacion_content{
     display: flex;
-    align-items: center;
-    ul{
-        list-style: none;
-        margin: 15px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    .ubicacion_content{
+        padding-left: 20px;
+        .ubicacion_mapa{
+            max-width: 650px;
+            width: 100%;
+            .mapa{
+                height: 450px;
+                width: 100%;
+                max-width: 850px;
+            }
+        }
+        .ubicacion_text{
+            padding-left: 4rem;
+            & ul{
+                list-style: none;
+                padding: 0;
+            }
+        }
     }
 }
 .galeria{

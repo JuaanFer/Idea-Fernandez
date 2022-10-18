@@ -1,33 +1,48 @@
 .contacto{
-    background-color: #757780;
+    background-image: url(https://kwba.com.ar/img/keller/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: $txt-color;
-    padding: 220px 50px 120px 50px;
-    display: grid;
-    grid-template-areas: 
-    "0 titulo titulo"
-    "img txt tabla"
-    "img txt tabla";
-}
-.contacto_titulo{
-    font-weight: bold;
-    grid-area: titulo;
-}
-.contacto_img{
-    grid-area: img;
-}
-.contacto_info{
-    grid-area: txt;
-    ul{
-        list-style: none;
-        li{
-            margin: 5px;
+    .form{
+        background: rgba(0, 0, 0, .6);
+        width: 90%;
+        max-width: 650px;
+        padding: 5px 35px;
+        padding-bottom: 30px;
+        .form-titulo{
+            text-align: center;
+            padding: 20px;
+            & span{
+                color: $color-enfasis;
+            }
+        }
+        .form-label{
+            color: $color-enfasis;
+            display: block;
+            font-size: 16px;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        .form-textarea, .form-input{
+            @extend %form-inputs;
+            &::placeholder { color: lightgray; }
+        }
+        .form-textarea{
+            height: 150px;
+        }
+        .btn-submit{
+            width: 50%;
+            height: 45px;
+            color: $txt-color;
+            background-color: $bg-nav;
+            border-radius: 25px;
+            margin-left: 130px;
+            &:hover{
+                background-color: $color-enfasis;
+                color: black;
+            }
         }
     }
-}
-.contacto_tabla{
-    grid-area: tabla;
-}
-.tabla{
-    border: solid 2px black;
-    border-collapse: separate;
 }

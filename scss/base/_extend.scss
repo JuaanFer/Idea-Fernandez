@@ -4,3 +4,12 @@
     align-items: center;
     flex-direction: column;
 }
+
+%form-inputs{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 12px 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
