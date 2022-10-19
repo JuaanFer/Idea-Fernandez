@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-padding-top: 100px;
+}
 body{
     font-family: 'Roboto', sans-serif;
     padding-top: 120px;
@@ -13,6 +16,7 @@ h1{
     margin-bottom: map-get($titulos, margen-bottom);
     text-align: map-get($titulos, alineacion );
     text-shadow: 8px 8px 7px black;
+    font-size: 320%;
 }
 .arriba{
     display: block;

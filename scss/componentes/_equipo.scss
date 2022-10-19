@@ -1,0 +1,69 @@
+.equipo{
+    background-color: #131313;
+    padding: 150px 50px 100px 50px;
+    color: $txt-color;
+    .equipoTexto{
+        @extend %disposicion;
+        h2{
+            color: $color-enfasis;
+            margin-bottom: 50px;
+            font-size: 300%;
+        }
+        span{
+            color: $color-enfasis;
+        }
+    }
+    .imagenEquipo{
+        @extend %disposicion;
+    }
+    .imgEquipo{
+        width: 100%;
+        max-width: 600px;
+    }
+}
+.staff{
+    background-color: #656B82;
+    padding: 50px 0 150px 0;
+    .tituloFichas{
+        padding-top: 90px;
+        text-align: center;
+        font-size: 110%;
+        h3{
+            font-size: 250%;
+            font-weight: bold;
+        }
+    }
+    .miembrosFichas{
+        display: flex;
+        padding: 0 0 50px 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .ficha{
+            @extend %disposicion;
+            margin: 50px 50px 0 50px;
+            img{
+                border-radius: 150px;
+                width: 200px;
+                max-width: 100%;
+                filter: grayscale(100%);
+                &:hover{
+                    filter: grayscale(0%);
+                    transition: all 1s;
+                }
+            }
+            .infoFicha{
+                text-align: center;
+                margin-top: 20px;
+                h4{
+                    font-weight: bold;
+                    color: $color-enfasis;
+                }
+                p{
+                    font-size: 115%;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

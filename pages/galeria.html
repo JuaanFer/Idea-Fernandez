@@ -42,9 +42,10 @@
                 Galeria
               </a>
               <ul class="dropdown-menu dropMenu">
-                <li><a class="dropdown-item" href="./galeria.html">Oficinas</a></li>
+                <li><a class="dropdown-item" href="./galeria.html">Inicio Galeria</a></li>
+                <li><a class="dropdown-item" href="#galeria">Nuestras Oficinas</a></li>
                 <li><a class="dropdown-item" href="#equipo">Nuestro Equipo</a></li>
-                <li><a class="dropdown-item" href="#video">Media</a></li>
+                <li><a class="dropdown-item" href="#staff">Nuestro Staff</a></li>
               </ul>
             </li>
           </ul>
@@ -54,21 +55,21 @@
   </header>
   
   <main>
-    <h1 class="bienvenidos">Galeria</h1>
+    <h1 class="bienvenidos">Galería</h1>
     <!--seccion 1: Galeria-->
     <section id="galeria" class="galeria">
-      <div class="container">
+      <div class="container cont-carrousel">
         <div class="row aling-items-start">
           <div class="col-lg-6 carouselItem">
             <div>
-              <h2 id="oficinas">Nuestras oficinas</h2>
+              <h2 id="oficinas" class="carousel-titulo">Nuestras oficinas</h2>
             </div>
             <!--Carrusel Oficinas-->
             <div id="carouselOficinas" class="carousel slide" data-bs-ride="true">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselOficinas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselOficinas" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselOficinas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <div class="carousel-indicators carousel-indicador">
+                <button type="button" data-bs-target="#carouselOficinas" data-bs-slide-to="0" class="active carousel-boton" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselOficinas" data-bs-slide-to="1" class="carousel-boton" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselOficinas" data-bs-slide-to="2" class="carousel-boton" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -93,14 +94,14 @@
           </div>        
           <div class="col-lg-6 carouselItem">
             <div>
-              <h2 id="eventos">Eventos</h2>
+              <h2 id="eventos" class="carousel-titulo">Eventos</h2>
             </div>
             <!--Carousel Eventos-->
             <div id="carouselEventos" class="carousel slide" data-bs-ride="true">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <div class="carousel-indicators carousel-indicador">
+                <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="0" class="active carousel-boton" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="1" class="carousel-boton" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="2" class="carousel-boton" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -136,7 +137,8 @@
               <h2>Nuestro Equipo</h2>
             </div>
             <div>
-              <p>Nuestro trabajo es ayudarte. Para ello desarrollamos un ecosistema de servicios de los cuales podrás apalancarte, explotar tus talentos y potenciar tu trabajo.
+              <p>
+                Nuestro trabajo es ayudarte. Para ello desarrollamos un  ecosistema de servicios de los cuales podrás apalancarte, <span>explotar tus talentos y potenciar tu trabajo</span>.
                 <br>
                 <br>
                 El compromiso de nuestro equipo es la parte central que nos distingue de otras empresas, completamente enfocado en mantener a nuestros clientes con la mayor productividad y acompañamiento posible.
@@ -149,8 +151,15 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <div class="baner_galeria">
+      <h2>"Lo que no se mide, no se mejora"</h2>
+    </div>
+
+    <section class="staff" id="staff">
       <div class="tituloFichas">
-        <h3>Staff</h3>
+        <h3>Miembros del Staff</h3>
       </div>
       <div class="miembrosFichas">
         <div class="ficha">
@@ -200,9 +209,7 @@
         </div>
       </div>
     </section>
-    <div class="video" id="video">
-      <iframe width="1500" height="760" src="https://www.youtube.com/embed/DbH2P4i64Q4?controls=0" title="Video de nuestro equipo" frameborder="0" allow="autoplay" allowfullscreen></iframe>
-    </div>
+
   </main>
 
   <footer id="pie">

@@ -5,6 +5,7 @@
 @import "./componentes/global";
 @import "./componentes/nosotros";
 @import "./componentes/contacto";
+@import "./componentes/equipo";
 @import "./componentes/footer";
 .navPropio{
     background-color: $bg-nav;
@@ -44,7 +45,7 @@
 .baner{
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: $bg-nav;
+    background-color: #131313;
     color: $txt-color;
     .baner_content{
         padding: 100px 0 30px 0;
@@ -65,7 +66,7 @@
     padding-top: 140px;
     background-color: #f1f3f4;
     .ubicacion_content{
-        padding: 85px 0 30px 0;
+        padding-top: 40px;
         .ubicacion_ficha{
             margin-bottom: 20px;
             .ubicacion_ficha_content{
@@ -82,80 +83,48 @@
     padding-top: 10px;
 }
 .galeria{
-    background: #F0C27B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-    padding: 15px;
-    padding-top: 120px;
+    background-color: #f1f3f4;
+    padding: 70px 0 70px 0;
     h2{
         text-align: center;
         margin: 20px 0 20px 0;
-    }
-}
-.carouselItem{
-    margin-bottom: 50px;
-}
-.equipo{
-    background-color: #656B82;
-    padding: 150px 50px 50px 50px;
-    color: $txt-color;
-    .equipoTexto{
-        @extend %disposicion;
-        h2{
-            margin-bottom: 50px;
-            font-size: 300%;
+        &::after{
+            content: "";
+            background-color: $color-enfasis;
+            display: block;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: 3px;
         }
     }
-    .imagenEquipo{
-        @extend %disposicion;
-    }
-    .imgEquipo{
-        width: 100%;
-        max-width: 600px;
-    }
-    .tituloFichas{
-        text-align: center;
-        margin-top: 100px;
-        h3{
-            font-size: 300%;
-            font-weight: bold;
-        }
-    }
-    .miembrosFichas{
-        display: flex;
-        padding: 0 0 150px 0;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        .ficha{
-            @extend %disposicion;
-            margin: 50px 50px 0 50px;
-            img{
-                border-radius: 150px;
-                width: 200px;
-                max-width: 100%;
-                filter: grayscale(100%);
-                &:hover{
-                    filter: grayscale(0%);
-                    transition: all 1s;
-                }
-            }
-            .infoFicha{
-                text-align: center;
-                margin-top: 20px;
-                h4{
-                    font-weight: bold;
-                }
+    .carouselItem{
+        margin-bottom: 50px;
+        position: relative;
+        .carousel-indicador{
+            .carousel-boton{
+                background-color: $color-enfasis;
             }
         }
     }
 }
 
-.video{
-    padding: 150px 0 20px 0;
-    display: flex;
-    justify-content: center;
-    margin: 25px;
+.baner_galeria{
+    height: 750px;
+    background-image: url(../images/fondogaleria.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    h2{
+    font-weight: map-get($titulos, tipo-letra);
+    padding: 300px 0 400px 0;
+    color: map-get($titulos, color-texto);
+    margin-bottom: map-get($titulos, margen-bottom);
+    text-align: map-get($titulos, alineacion );
+    font-size: 320%;
+    text-shadow: 8px 8px 7px black;
+    }
 }
 @media(max-width:1150px){
     .sobreNosotros{

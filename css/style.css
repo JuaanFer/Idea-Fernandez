@@ -1,4 +1,4 @@
-.equipo .miembrosFichas .ficha, .equipo .imagenEquipo, .equipo .equipoTexto, .sobreNosotros .sobreNosotros_content .sobreNosotros_text {
+.staff .miembrosFichas .ficha, .equipo .imagenEquipo, .equipo .equipoTexto, .sobreNosotros .sobreNosotros_content .sobreNosotros_text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,10 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   padding-top: 120px;
@@ -31,6 +35,7 @@ h1 {
   margin-bottom: 0;
   text-align: center;
   text-shadow: 8px 8px 7px black;
+  font-size: 320%;
 }
 
 .arriba {
@@ -40,13 +45,13 @@ h1 {
 }
 
 .sobreNosotros {
-  padding: 200px 0 100px 0;
+  padding: 150px 0 100px 0;
   background-color: #F8F4F9;
   display: flex;
 }
 .sobreNosotros .sobreNosotros_content {
   display: flex;
-  margin: 0 100px 0 100px;
+  margin: 0 80px 0 100px;
 }
 .sobreNosotros .sobreNosotros_content .sobreNosotros_text {
   margin-right: 20px;
@@ -121,6 +126,70 @@ h1 {
 .contacto .form .btn-submit:hover {
   background-color: #F7C40E;
   color: black;
+}
+
+.equipo {
+  background-color: #131313;
+  padding: 150px 50px 100px 50px;
+  color: #F8F4F9;
+}
+.equipo .equipoTexto h2 {
+  color: #F7C40E;
+  margin-bottom: 50px;
+  font-size: 300%;
+}
+.equipo .equipoTexto span {
+  color: #F7C40E;
+}
+.equipo .imgEquipo {
+  width: 100%;
+  max-width: 600px;
+}
+
+.staff {
+  background-color: #656B82;
+  padding: 50px 0 150px 0;
+}
+.staff .tituloFichas {
+  padding-top: 90px;
+  text-align: center;
+  font-size: 110%;
+}
+.staff .tituloFichas h3 {
+  font-size: 250%;
+  font-weight: bold;
+}
+.staff .miembrosFichas {
+  display: flex;
+  padding: 0 0 50px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.staff .miembrosFichas .ficha {
+  margin: 50px 50px 0 50px;
+}
+.staff .miembrosFichas .ficha img {
+  border-radius: 150px;
+  width: 200px;
+  max-width: 100%;
+  filter: grayscale(100%);
+}
+.staff .miembrosFichas .ficha img:hover {
+  filter: grayscale(0%);
+  transition: all 1s;
+}
+.staff .miembrosFichas .ficha .infoFicha {
+  text-align: center;
+  margin-top: 20px;
+}
+.staff .miembrosFichas .ficha .infoFicha h4 {
+  font-weight: bold;
+  color: #F7C40E;
+}
+.staff .miembrosFichas .ficha .infoFicha p {
+  font-size: 115%;
+  font-weight: bold;
 }
 
 footer {
@@ -201,7 +270,7 @@ footer .legal {
 .baner {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: #080808;
+  background-color: #131313;
   color: #F8F4F9;
 }
 .baner .baner_content {
@@ -224,7 +293,7 @@ footer .legal {
   background-color: #f1f3f4;
 }
 .ubicacion .ubicacion_content {
-  padding: 85px 0 30px 0;
+  padding-top: 40px;
 }
 .ubicacion .ubicacion_content .ubicacion_ficha {
   margin-bottom: 20px;
@@ -242,75 +311,46 @@ footer .legal {
 }
 
 .galeria {
-  background: #F0C27B; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #4B1248, #F0C27B); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 15px;
-  padding-top: 120px;
+  background-color: #f1f3f4;
+  padding: 70px 0 70px 0;
 }
 .galeria h2 {
   text-align: center;
   margin: 20px 0 20px 0;
 }
-
-.carouselItem {
-  margin-bottom: 50px;
-}
-
-.equipo {
-  background-color: #656B82;
-  padding: 150px 50px 50px 50px;
-  color: #F8F4F9;
-}
-.equipo .equipoTexto h2 {
-  margin-bottom: 50px;
-  font-size: 300%;
-}
-.equipo .imgEquipo {
+.galeria h2::after {
+  content: "";
+  background-color: #F7C40E;
+  display: block;
+  left: 0;
+  top: 100%;
   width: 100%;
-  max-width: 600px;
+  height: 3px;
 }
-.equipo .tituloFichas {
-  text-align: center;
-  margin-top: 100px;
+.galeria .carouselItem {
+  margin-bottom: 50px;
+  position: relative;
 }
-.equipo .tituloFichas h3 {
-  font-size: 300%;
-  font-weight: bold;
-}
-.equipo .miembrosFichas {
-  display: flex;
-  padding: 0 0 150px 0;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.equipo .miembrosFichas .ficha {
-  margin: 50px 50px 0 50px;
-}
-.equipo .miembrosFichas .ficha img {
-  border-radius: 150px;
-  width: 200px;
-  max-width: 100%;
-  filter: grayscale(100%);
-}
-.equipo .miembrosFichas .ficha img:hover {
-  filter: grayscale(0%);
-  transition: all 1s;
-}
-.equipo .miembrosFichas .ficha .infoFicha {
-  text-align: center;
-  margin-top: 20px;
-}
-.equipo .miembrosFichas .ficha .infoFicha h4 {
-  font-weight: bold;
+.galeria .carouselItem .carousel-indicador .carousel-boton {
+  background-color: #F7C40E;
 }
 
-.video {
-  padding: 150px 0 20px 0;
-  display: flex;
-  justify-content: center;
-  margin: 25px;
+.baner_galeria {
+  height: 750px;
+  background-image: url(../images/fondogaleria.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.baner_galeria h2 {
+  font-weight: bold;
+  padding: 300px 0 400px 0;
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 320%;
+  text-shadow: 8px 8px 7px black;
 }
 
 @media (max-width: 1150px) {
