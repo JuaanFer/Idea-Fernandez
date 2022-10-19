@@ -10,7 +10,7 @@
   outline: none;
   width: 100%;
   padding: 12px 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
   border-radius: 4px;
 }
 
@@ -86,8 +86,9 @@ h1 {
   background: rgba(0, 0, 0, 0.6);
   width: 90%;
   max-width: 650px;
-  padding: 5px 35px;
-  padding-bottom: 30px;
+  height: 100%;
+  padding: 120px 35px;
+  padding-bottom: 80px;
 }
 .contacto .form .form-titulo {
   text-align: center;
@@ -198,8 +199,8 @@ footer .legal {
 }
 
 .baner {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #080808;
   color: #F8F4F9;
 }
@@ -219,29 +220,25 @@ footer .legal {
 }
 
 .ubicacion {
-  background-color: #656B82;
-  display: flex;
-  padding-top: 90px;
-  padding-bottom: 50px;
+  padding-top: 140px;
+  background-color: #f1f3f4;
 }
 .ubicacion .ubicacion_content {
-  padding-left: 20px;
+  padding: 85px 0 30px 0;
 }
-.ubicacion .ubicacion_content .ubicacion_mapa {
-  max-width: 650px;
-  width: 100%;
+.ubicacion .ubicacion_content .ubicacion_ficha {
+  margin-bottom: 20px;
 }
-.ubicacion .ubicacion_content .ubicacion_mapa .mapa {
-  height: 450px;
-  width: 100%;
-  max-width: 850px;
+.ubicacion .ubicacion_content .ubicacion_ficha .ubicacion_ficha_content {
+  padding: 20px;
 }
-.ubicacion .ubicacion_content .ubicacion_text {
-  padding-left: 4rem;
+.ubicacion .ubicacion_content .ubicacion_ficha .ubicacion_ficha_content h5 {
+  color: #F7C40E;
 }
-.ubicacion .ubicacion_content .ubicacion_text ul {
-  list-style: none;
-  padding: 0;
+
+.ubicacion_mapa {
+  background-color: #f1f3f4;
+  padding-top: 10px;
 }
 
 .galeria {
